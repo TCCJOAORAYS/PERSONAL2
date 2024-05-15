@@ -180,6 +180,7 @@ section {
 .about .image img {
     width: 100%;
     padding: 2rem;
+    filter: drop-shadow(0 0 4px rgb(5, 238, 21));
 }
 
 .about .content {
