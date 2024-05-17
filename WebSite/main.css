@@ -278,27 +278,16 @@ section {
     padding: 1rem 0;
 }
 
-.trainers .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-    gap: 1.5rem;
-}
-
-.trainers .box-container .box {
-    height: 40rem;
+.trainers .box {
+    height: 10rem;
     overflow: hidden;
     position: relative;
 }
-.trainers .box-container .box:hover .social-media {
+.trainers .box:hover .social-media {
     transform: translateY(0);
 }
 
-.trainers .box-container .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.trainers .box-container .box .social-media {
+.trainers .box .social-media {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -308,24 +297,24 @@ section {
     transform: translateY(6.5rem);
 }
 
-.trainers .box-container .box .social-media h3 {
+.trainers .box .social-media h3 {
     font-size: 2rem;
     color: #08c521;
     padding-top: .5rem;
 }
-.trainers .box-container .box .social-media .share {
+.trainers .box .social-media .share {
     padding-top: 2rem;
     margin-top: 1.5rem;
     border-top: 0.1rem solid #aaa;
 }
 
-.trainers .box-container .box .social-media .share a {
+.trainers .box .social-media .share a {
     font-size: 2rem;
     color: #fff;
     margin-right: 1.5rem;
 }
 
-.trainers .box-container .box .social-media .share a:hover {
+.trainers .box .social-media .share a:hover {
     color: rgb(5, 238, 21);
 }
 .banner {
