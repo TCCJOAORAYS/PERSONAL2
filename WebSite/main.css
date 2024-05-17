@@ -289,7 +289,7 @@ section {
     overflow: hidden;
     position: relative;
 }
-.trainers .box-container .box:hover .content {
+.trainers .box-container .box:hover .social-media {
     transform: translateY(0);
 }
 
@@ -298,39 +298,34 @@ section {
     width: 100%;
     object-fit: cover;
 }
-.trainers .box-container .box .content {
+.trainers .box-container .box .social-media {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #000000;
     padding: 2rem;
     transform: translateY(6.5rem);
 }
 
-.trainers .box-container .box .content span {
-    font-size: 1.5rem;
-    color: rgb(5, 238, 21);
-}
-
-.trainers .box-container .box .content h3 {
+.trainers .box-container .box .social-media h3 {
     font-size: 2rem;
-    color: #fff;
+    color: #08c521;
     padding-top: .5rem;
 }
-.trainers .box-container .box .content .share {
+.trainers .box-container .box .social-media .share {
     padding-top: 2rem;
     margin-top: 1.5rem;
     border-top: 0.1rem solid #aaa;
 }
 
-.trainers .box-container .box .content .share a {
+.trainers .box-container .box .social-media .share a {
     font-size: 2rem;
     color: #fff;
     margin-right: 1.5rem;
 }
 
-.trainers .box-container .box .content .share a:hover {
+.trainers .box-container .box .social-media .share a:hover {
     color: rgb(5, 238, 21);
 }
 .banner {
