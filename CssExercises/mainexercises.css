@@ -1,0 +1,111 @@
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    /*o que fica abaixo da barra*/
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+    /*cor da barra*/
+    background: rgb(5, 238, 21);
+}
+
+body {
+    background: #000;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+/*Cabeçalho das sessões*/
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: .1rem;
+    width: 100%;
+    background: #aaa;
+    z-index: -1;
+}
+.heading span {
+    font-size: 3rem;
+    color: rgb(5, 238, 21);
+    background: #000;
+    padding: .5rem 1.5rem;
+    border: 0.1rem solid #aaa;
+    border-radius: .5rem;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, rgb(5, 238, 21) 93%, 
+    transparent 90%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 10000;
+    background: #000;
+}
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3rem;
+}
+.header .logo span {
+    color: rgb(5, 238, 21);
+}
+
+.logoz{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.LogoVitor{
+    width: 100px;
+    height:100px;
+}
+.header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+.header .navbar a:hover {
+    background: rgb(5, 238, 21);
+}
+#menu-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
