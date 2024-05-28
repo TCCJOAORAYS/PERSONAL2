@@ -1,3 +1,10 @@
+:root {
+    --cor-verde-menta: #05ee15;
+    --cor-preto: #000 ;
+    --cor-branca: #fff;
+    --cor-cinza: #808080;
+  }
+
 html::-webkit-scrollbar {
     width: 1rem;
 }
@@ -9,7 +16,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     /*cor da barra*/
-    background: rgb(5, 238, 21);
+    background: var(--cor-verde-menta);
 }
 
 body {
@@ -34,15 +41,15 @@ section {
     transform: translateY(-50%);
     height: .1rem;
     width: 100%;
-    background: #aaa;
+    background: var(--cor-cinza);
     z-index: -1;
 }
 .heading span {
     font-size: 3rem;
-    color: rgb(5, 238, 21);
-    background: #000;
+    color: var(--cor-verde-menta);
+    background: var(--cor-preto);
     padding: .5rem 1.5rem;
-    border: 0.1rem solid #aaa;
+    border: 0.1rem solid var(--cor-cinza);
     border-radius: .5rem;
 }
 .btn {
@@ -50,9 +57,9 @@ section {
     display: inline-block;
     padding: 1rem 2.8rem;
     padding-right: 3rem;
-    background: linear-gradient(130deg, rgb(5, 238, 21) 93%, 
+    background: linear-gradient(130deg, var(--cor-verde-menta) 93%, 
     transparent 90%);
-    color: #fff;
+    color: var(--cor-branca);
     cursor: pointer;
     font-size: 1.7rem;
 }
@@ -70,15 +77,15 @@ section {
     justify-content: space-between;
     padding: 0 9%;
     z-index: 10000;
-    background: #000;
+    background: var(--cor-preto);
 }
 .header .logo {
     font-weight: bolder;
-    color: #fff;
+    color: var(--cor-branca);
     font-size: 3rem;
 }
 .header .logo span {
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .logoz{
@@ -98,14 +105,14 @@ section {
     display: inline-block;
     padding: 1.5rem 2rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--cor-branca);
 }
 .header .navbar a:hover {
-    background: rgb(5, 238, 21);
+    background: var(--cor-verde-menta);
 }
 #menu-btn {
     font-size: 3rem;
-    color: #fff;
+    color: var(--cor-branca);
     cursor: pointer;
     display: none;
 }
@@ -129,24 +136,24 @@ section {
 
 .home .slide .content span {
     font-size: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
     display: block;
 }
 .home .slide .content h3 {
     font-size: 5rem;
-    color: #fff;
+    color: var(--cor-branca);
     padding: 1rem 0;
 }
 /*class de swipwer para criar as bolinhas*/
 .swiper-pagination-bullet {
     height: 2rem;
     width: 2rem;
-    background: #fff;
+    background: var(--cor-branca);
     border-radius: 0;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: rgb(5, 238, 21);
+    background: var(--cor-verde-menta);
 }
 .about {
     display: flex;
@@ -164,7 +171,7 @@ section {
     content: '';
     position: absolute;
     z-index: -1;
-    background: rgb(5, 238, 21);
+    background: var(--cor-verde-menta);
     height: 15rem;
     width: 15rem;
 }
@@ -180,7 +187,7 @@ section {
 .about .image img {
     width: 100%;
     padding: 2rem;
-    filter: drop-shadow(0 0 4px rgb(5, 238, 21));
+    filter: drop-shadow var(--cor-verde-menta);
 }
 
 .about .content {
@@ -188,7 +195,7 @@ section {
 }
 .about .content span {
     font-size: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .about .content .title {
@@ -215,12 +222,12 @@ section {
 
 .about .content .box-container .box h3 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--cor-branca);
 }
 
 .about .content .box-container .box h3 i {
     padding-right: 1.5rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 .features .box-container {
     display: grid;
@@ -231,7 +238,7 @@ section {
     gap: 1.5rem;
 }
 .features .box-container .box {
-    background: #111;
+    background: var(--cor-preto);
 }
 
 .features .box-container .box.second {
@@ -268,13 +275,13 @@ section {
 
 .features .box-container .box .content h3 {
     font-size: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .features .box-container .box .content p {
     line-height: 2;
     font-size: 1.5rem;
-    color: #aaa;
+    color: var(--cor-cinza);
     padding: 1rem 0;
 }
 
@@ -292,30 +299,30 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000000;
+    background: var(--cor-preto);
     padding: 2rem;
     transform: translateY(6.5rem);
 }
 
 .trainers .box .social-media h3 {
     font-size: 2rem;
-    color: #08c521;
+    color: var(--cor-verde-menta);
     padding-top: .5rem;
 }
 .trainers .box .social-media .share {
     padding-top: 2rem;
     margin-top: 1.5rem;
-    border-top: 0.1rem solid #aaa;
+    border-top: 0.1rem solid var(--cor-cinza);
 }
 
 .trainers .box .social-media .share a {
     font-size: 2rem;
-    color: #fff;
+    color: var(--cor-branca);
     margin-right: 1.5rem;
 }
 
 .trainers .box .social-media .share a:hover {
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -327,12 +334,12 @@ section {
 }
 .banner span {
     font-size: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .banner h3 {
     padding-top: 1rem;
-    color: #fff;
+    color: var(--cor-branca);
     text-transform: uppercase;
     font-size: 3.5rem;
 }
@@ -341,7 +348,7 @@ section {
     margin: 1rem auto;
     max-width: 60rem;
     font-size: 1.5rem;
-    color: #aaa;
+    color: var(--cor-cinza);
     line-height: 2;
 }
 .review {
@@ -480,9 +487,9 @@ section {
 .footer .box-container .box form .email {
     margin-bottom: 1rem;
     width: 100%;
-    background: #111;
+    background: var(--cor-preto);
     padding: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--cor-branca);
     text-transform: none;
 }
