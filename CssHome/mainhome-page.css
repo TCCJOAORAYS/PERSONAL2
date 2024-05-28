@@ -325,13 +325,17 @@ section {
     color: var(--cor-verde-menta);
 }
 .banner {
+    width: 100%;
+    height: 60%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-    url(img/imagemfundo.jpg) no-repeat;
+    url(../img/imagemfundo.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
 }
+
 .banner span {
     font-size: 2rem;
     color: var(--cor-verde-menta);
@@ -363,19 +367,19 @@ section {
 }
 .review .information span {
     font-size: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .review .information h3 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--cor-branca);
     padding-top: 1rem;
 }
 
 .review .information p {
     font-size: 1.5rem;
     line-height: 2;
-    color: #aaa;
+    color: var(--cor-cinza);
     padding: 1rem 0;
 }
 
@@ -384,14 +388,14 @@ section {
 }
 
 .review .review-slider .slide {
-    background: linear-gradient(130deg, #111 93%, transparent 90%);
+    background: linear-gradient(130deg, var(--cor-preto) 93%, transparent 90%);
     padding: 2rem 3rem;
 }
 
 .review .review-slider .slide p {
     font-size: 1.5rem;
     line-height: 2;
-    color: #aaa;
+    color: var(--cor-cinza);
 }
 
 .review .review-slider .slide .user {
@@ -410,11 +414,11 @@ section {
 
 .review .review-slider .slide .user h3 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--cor-branca);
 }
 
 .review .review-slider .slide .user span {
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
     font-size: 1.5rem;
 }
 
@@ -422,7 +426,7 @@ section {
     font-size: 5rem;
     margin-left: auto;
     margin-right: 2rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 
@@ -434,30 +438,30 @@ section {
 
 .footer .box-container .box h3 {
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--cor-branca);
     padding: 1rem 1rem;
 }
 
 .footer .box-container .box .links {
     font-size: 1.5rem;
     display: block;
-    color: #aaa;
+    color: var(--cor-cinza);
     padding: 1rem 3rem;
 }
 
 .footer .box-container .box .links:hover {
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
-    color: #aaa;
+    color: var(--cor-cinza);
     padding: 1rem 3rem;
 }
 
 .footer .box-container .box p i {
     padding-right: .5rem;
-    color: rgb(5, 238, 21);
+    color: var(--cor-verde-menta);
 }
 
 .footer .box-container .box .share {
@@ -469,15 +473,15 @@ section {
     width: 4.5rem;
     line-height: 4.5rem;
     font-size: 1.7rem;
-    color: #fff;
-    background: #111;
+    color: var(--cor-branca);
+    background: var(--cor-preto);
     border-radius: 50%;
     margin-right: .5rem;
     text-align: center;
 }
 
 .footer .box-container .box .share a:hover {
-    background: rgb(5, 238, 21);
+    background: var(--cor-verde-menta);
 }
 
 .footer .box-container .box form {
