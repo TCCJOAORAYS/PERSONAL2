@@ -68,3 +68,26 @@ var swiper = new Swiper(".blogs-slider", {
         },
     },
 });
+
+let isScrolling;
+let bodyWidth = document.body.scrollWidth;
+const header = document.querySelector('.header');
+
+
+
+window.addEventListener('scroll', () => {
+const currentScrollTop = window.scrollY;
+
+        if (currentScrollTop > 0) {
+            header.style.opacity = '0.1';
+
+        } else {
+            header.style.opacity = '1';
+        }
+
+        clearTimeout(isScrolling);
+
+        isScrolling = setTimeout(() => {
+            header.style.opacity = '1';
+        }, 500);
+     });
